@@ -1,0 +1,14 @@
+body {
+  background-color: #EEE;
+  /* margin: .75rem !important; */
+  padding-top: 1.25rem;
+}
+
+button#apply{
+  margin-top: 1.5rem;
+}
+
+
+.hidden {
+  display: none !important;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <form class="form-inline row">
+      <div class="form-group col-3">
+        <input type="checkbox" class="form-check-input" id="f1-enable">
+        <label for="f1-enable" class="form-check-label">F1</label>
+      </div>
+      <div class="form-group single-value-field col-6">
+        <input type="text" class="form-control form-control-sm col-2" id="f1-interval">
+        <label for="f1-interval" class="col-form-label col-4">Every (ms)</label>
+        <div class="form-group col-6"></div>
+      </div>
+      <div class="form-group two-values-field col-6 hidden">
+        <input type="text" class="form-control form-control-sm col-2" id="f1-interval-from">
+        <label for="f1-interval-from" class="col-form-label col-4">From (ms)</label>
+        <input type="text" class="form-control form-control-sm col-2" id="f1-interval-to">
+        <label for="f1-interval-to" class="col-form-label col-4">To (ms)</label>
+      </div>
+      <div class="form-group col-3">
+        <input type="checkbox" class="form-check-input randomize" id="random-f1">
+        <label for="random-f1" class="form-check-label">Radomize</label>
+      </div>
+    </form>
+
+    <form class="form-inline row">
+      <div class="form-group col-3">
+        <input type="checkbox" class="form-check-input" id="right-click-enable">
+        <label for="right-click-enable" class="form-check-label">Right Click</label>
+      </div>
+      <div class="form-group single-value-field col-6">
+        <input type="text" class="form-control form-control-sm col-2" id="right-click-interval">
+        <label for="right-click-interval" class="col-form-label col-4">Every (ms)</label>
+        <div class="form-group col-6"></div>
+      </div>
+      <div class="form-group two-values-field col-6 hidden">
+        <input type="text" class="form-control form-control-sm col-2" id="right-click-interval-from">
+        <label for="right-click-interval-from" class="col-form-label col-4">From (ms)</label>
+        <input type="text" class="form-control form-control-sm col-2" id="right-click-interval-to">
+        <label for="right-click-interval-to" class="col-form-label col-4">To (ms)</label>
+      </div>
+      <div class="form-group col-3">
+        <input type="checkbox" class="form-check-input randomize" id="random-right-click">
+        <label for="random-right-click" class="form-check-label">Radomize</label>
+      </div>
+    </form>
+
+    <form class="form-inline row">
+      <div class="form-group col-3">
+        <input type="checkbox" class="form-check-input" id="left-click-enable">
+        <label for="left-click-enable" class="form-check-label">Left Click</label>
+      </div>
+      <div class="form-group single-value-field col-6">
+        <input type="text" class="form-control form-control-sm col-2" id="left-click-interval">
+        <label for="left-click-interval" class="col-form-label col-4">Every (ms)</label>
+        <div class="form-group col-6"></div>
+      </div>
+      <div class="form-group two-values-field col-6 hidden">
+        <input type="text" class="form-control form-control-sm col-2" id="left-click-interval-from">
+        <label for="left-click-interval-from" class="col-form-label col-4">From (ms)</label>
+        <input type="text" class="form-control form-control-sm col-2" id="left-click-interval-to">
+        <label for="left-click-interval-to" class="col-form-label col-4">To (ms)</label>
+      </div>
+      <div class="form-group col-3">
+        <input type="checkbox" class="form-check-input randomize" id="random-left-click">
+        <label for="random-left-click" class="form-check-label">Radomize</label>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col text-center">
+        <button class="btn btn-success btn-lg" id="start">Start</button>
+        <button class="btn btn-danger btn-lg" id="stop" disabled>Stop</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    require('./renderer');
+  </script>
+</body>
+</html>

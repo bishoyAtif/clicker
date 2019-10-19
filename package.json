@@ -1,0 +1,24 @@
+{
+  "name": "clicker",
+  "version": "1.0.0",
+  "description": "Clicker to click HAHAHA",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "pack": "electron-packager . clicker --platform=win32 --arch=x64"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  },
+  "devDependencies": {
+    "electron": "^4.0.2",
+    "electron-packager": "^14.0.6"
+  },
+  "dependencies": {
+    "robotjs": "^0.5.1"
+  }
+}
