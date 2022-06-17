@@ -15,7 +15,7 @@
     "url": "git://github.com/username/repository.git"
   },
   "devDependencies": {
-    "electron": "^4.0.2",
+    "electron": "^15.5.5",
     "electron-packager": "^14.0.6"
   },
   "dependencies": {
